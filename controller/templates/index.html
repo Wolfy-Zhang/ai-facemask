@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>口罩佩戴识别检测系统</title>
+    <link href="../static/css/style-index.css" rel='stylesheet' type='text/css'/>
+</head>
+<body>
+<div class="table_align">
+    <table border="0">
+        <tr>
+            <td colspan="1" style="background-color:#27CCCC;">
+                <h1>口罩佩戴识别检测系统</h1>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="background-color:#5AE5E5	;height:500px;width:645px;">
+                <img id="video" src="{{ url_for('home.video_viewer') }}">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" style="background-color:#7ac3c9;">
+                <input type="button" class="btn" value="退出系统"
+                    onclick="javascrtpt:window.location.href='{{ url_for('user.logout') }}'">
+            </td>
+        </tr>
+    </table>
+</div>   
+</body>
+</html>
